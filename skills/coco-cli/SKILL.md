@@ -49,46 +49,27 @@ If `matrix/`, `steps/`, `misc/` folders are all present, it's an ODB++ root.
 
 ## Command Usage
 
-**Always check `--help` for current options:**
+**IMPORTANT: Always run `--help` first to discover available commands and options:**
 
 ```bash
-# List all commands
+# Discover all commands
 coco --help
 
-# Get command-specific options
+# Get specific command options (REQUIRED before using any command)
 coco <command> --help
 ```
-
-### Key Commands
-
-| Command | Purpose |
-|---------|---------|
-| `list-layers` | List layers |
-| `list-nets` | List nets |
-| `list-components` | List components |
-| `list-features` | List features |
-| `measure` | Measure distance between features |
-| `net-distance` | Minimum distance between nets |
-| `net-length` | Calculate net total length |
-| `render` | Render layer as PNG |
-
-### Common Options
-
-| Option | Description |
-|--------|-------------|
-| `--input <path>` | ODB++ root directory (required) |
-| `--layer <name>` | Layer name |
-| `--step <name>` | Step name (usually auto-detected) |
-| `--format json` | JSON output |
 
 ## Basic Workflow
 
 ```bash
-# 1. When ODB++ folder found, first check layers
-coco list-layers --input <odb_path>
+# 1. Discover commands
+coco --help
 
-# 2. Analyze based on user request
-coco <command> --help  # Check options before running
+# 2. Check command options
+coco list-layers --help
+
+# 3. Run with appropriate options
+coco list-layers --input <odb_path>
 ```
 
 ## Use Cases
