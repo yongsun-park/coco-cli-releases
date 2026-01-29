@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REPO="cubicai/coco-cli-releases"
+REPO="yongsun-park/coco-cli-releases"
 INSTALL_DIR="${HOME}/.local/bin"
 
 # OS/아키텍처 감지
