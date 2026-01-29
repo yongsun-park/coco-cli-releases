@@ -1,21 +1,21 @@
-# 넷 분석
+# Net Analysis
 
-특정 넷의 경로, 길이, 피처 분석.
+Analyze specific net paths, lengths, and features.
 
-## 작업 흐름
+## Workflow
 
 ```bash
-# 1. 넷 검색
+# 1. Search for nets
 coco list-nets --input <odb_path> --pattern "<pattern>"
 
-# 2. 넷의 피처 조회
+# 2. Get net features
 coco list-net-features --input <odb_path> --net <net_name> --layer <layer_name>
 
-# 3. 넷 길이 계산
+# 3. Calculate net length
 coco net-length --input <odb_path> --pattern "<net_pattern>"
 ```
 
-## 옵션 확인
+## Check Options
 
 ```bash
 coco list-nets --help

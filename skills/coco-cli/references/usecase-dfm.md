@@ -1,21 +1,21 @@
-# DFM 간격 검증
+# DFM Clearance Verification
 
-PCB 설계의 Design for Manufacturing (DFM) 간격 규칙 검증.
+Verify Design for Manufacturing (DFM) clearance rules in PCB designs.
 
-## 작업 흐름
+## Workflow
 
 ```bash
-# 1. 레이어 확인
+# 1. Check layers
 coco list-layers --input <odb_path>
 
-# 2. 넷 간격 검사 (특정 레이어)
+# 2. Check net clearances on specific layer
 coco net-distance-batch --input <odb_path> --layer <layer_name>
 
-# 3. 문제 피처 상세 확인
+# 3. Inspect problematic feature details
 coco feature-dump --input <odb_path> --layer <layer_name> --feature <id>
 ```
 
-## 옵션 확인
+## Check Options
 
 ```bash
 coco net-distance-batch --help
