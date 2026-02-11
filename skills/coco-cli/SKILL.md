@@ -39,9 +39,21 @@ If not installed, use the install script or download manually:
 ./scripts/install.ps1
 ```
 
+**One-line install:**
+
+```bash
+# Linux/macOS:
+curl -fsSL https://raw.githubusercontent.com/yongsun-park/coco-cli-releases/main/skills/coco-cli/scripts/install.sh | bash
+```
+
+```powershell
+# Windows (PowerShell):
+irm https://raw.githubusercontent.com/yongsun-park/coco-cli-releases/main/skills/coco-cli/scripts/install.ps1 | iex
+```
+
 **Manual install (if scripts are blocked):**
 
-Download the binary from [GitHub Releases](https://github.com/yongsun-park/coco-cli-releases/releases/latest) and add to PATH.
+Download from [GitHub Releases](https://github.com/yongsun-park/coco-cli-releases/releases/latest), place in the path below, and add to PATH.
 
 | OS | File | Default path |
 |----|------|-------------|
