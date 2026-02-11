@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $Repo = "yongsun-park/coco-cli-releases"
-$InstallDir = "$env:LOCALAPPDATA\Pentacube\coco"
+$InstallDir = "$env:LOCALAPPDATA\Pentacube\CubicAI\bin"
 $Artifact = "coco-windows-x64.exe"
 
 Write-Host "Platform: Windows x64"

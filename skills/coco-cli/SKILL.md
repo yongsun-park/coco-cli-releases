@@ -45,7 +45,7 @@ Download the binary from [GitHub Releases](https://github.com/yongsun-park/coco-
 
 | OS | File | Default path |
 |----|------|-------------|
-| Windows | `coco-windows-x64.exe` | `%LOCALAPPDATA%\Pentacube\coco\coco.exe` |
+| Windows | `coco-windows-x64.exe` | `%LOCALAPPDATA%\Pentacube\CubicAI\bin\coco.exe` |
 | macOS (Apple Silicon) | `coco-macos-arm64` | `~/.local/bin/coco` |
 | macOS (Intel) | `coco-macos-x64` | `~/.local/bin/coco` |
 | Linux | `coco-linux-x64` | `~/.local/bin/coco` |
