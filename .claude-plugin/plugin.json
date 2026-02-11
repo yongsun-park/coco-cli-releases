@@ -1,0 +1,8 @@
+{
+  "name": "coco-cli",
+  "description": "PCB design file analysis CLI (ODB++, Cadence .brd/.sip). Query layers/nets/components, measure feature distances, analyze net clearances, render PNG images.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Pentacube"
+  }
+}
