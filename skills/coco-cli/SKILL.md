@@ -24,22 +24,15 @@ Command-line tool for analyzing PCB design files (ODB++, Cadence).
 
 ## Installation
 
+**IMPORTANT: First check if coco is already installed. If `coco --help` succeeds, skip installation entirely.**
+
 ```bash
-# Check installation
 coco --help
 ```
 
-If not installed, use the install script or download manually:
+If the command above succeeds, coco is ready to use. Do NOT run install scripts again.
 
-```bash
-# Linux/macOS:
-./scripts/install.sh
-
-# Windows (PowerShell):
-./scripts/install.ps1
-```
-
-**One-line install:**
+**Only if `coco --help` fails (command not found)**, install using one of the methods below:
 
 ```bash
 # Linux/macOS:
