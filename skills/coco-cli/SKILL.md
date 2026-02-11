@@ -1,6 +1,6 @@
 ---
 name: coco-cli
-description: ODB++ PCB design file analysis CLI. Query layers/nets/components, measure feature distances, analyze net clearances, render PNG images.
+description: PCB design file analysis CLI (ODB++, Cadence .brd/.sip). Query layers/nets/components, measure feature distances, analyze net clearances, render PNG images.
 license: LicenseRef-Proprietary
 compatibility: Requires coco CLI binary. Supports Windows, macOS, Linux.
 metadata:
@@ -10,16 +10,17 @@ metadata:
 
 # coco CLI
 
-Command-line tool for analyzing ODB++ PCB design files.
+Command-line tool for analyzing PCB design files (ODB++, Cadence).
 
 ## When to Use
 
 **Use coco CLI in these situations:**
 
 1. **ODB++ folder detected** - Directory containing `matrix/`, `steps/`, `misc/` folders
-2. **PCB-related queries** - Layer, net, component, feature, distance measurement requests
-3. **DFM verification** - Clearance checks, short detection, design rule validation
-4. **Keywords present** - ODB++, PCB, Gerber, layer, netlist, DRC
+2. **Cadence file detected** - `.brd` or `.sip` file, or Cadence `.out` directory
+3. **PCB-related queries** - Layer, net, component, feature, distance measurement requests
+4. **DFM verification** - Clearance checks, short detection, design rule validation
+5. **Keywords present** - ODB++, PCB, Cadence, Allegro, layer, netlist, DRC
 
 ## Installation
 
@@ -34,8 +35,9 @@ coco --help
 ./scripts/install.ps1
 ```
 
-## ODB++ Folder Identification
+## Input Identification
 
+### ODB++
 ODB++ folders are identified by internal structure (folder name is irrelevant):
 
 ```
@@ -46,6 +48,11 @@ ODB++ folders are identified by internal structure (folder name is irrelevant):
 ```
 
 If `matrix/`, `steps/`, `misc/` folders are all present, it's an ODB++ root.
+
+### Cadence
+- `.brd` or `.sip` file - auto-detected, uses Extracta + cache
+- `.out` directory - use `--input-kind cadence`
+- **Requires**: Cadence Extracta license (Extracta must be installed and licensed)
 
 ## Command Usage
 
