@@ -27,13 +27,28 @@ Command-line tool for analyzing PCB design files (ODB++, Cadence).
 ```bash
 # Check installation
 coco --help
+```
 
-# If not installed
+If not installed, use the install script or download manually:
+
+```bash
 # Linux/macOS:
 ./scripts/install.sh
-# Windows:
+
+# Windows (PowerShell):
 ./scripts/install.ps1
 ```
+
+**Manual install (if scripts are blocked):**
+
+Download the binary from [GitHub Releases](https://github.com/yongsun-park/coco-cli-releases/releases/latest) and add to PATH.
+
+| OS | File | Default path |
+|----|------|-------------|
+| Windows | `coco-windows-x64.exe` | `%LOCALAPPDATA%\Pentacube\coco\coco.exe` |
+| macOS (Apple Silicon) | `coco-macos-arm64` | `~/.local/bin/coco` |
+| macOS (Intel) | `coco-macos-x64` | `~/.local/bin/coco` |
+| Linux | `coco-linux-x64` | `~/.local/bin/coco` |
 
 ## Input Identification
 
@@ -88,5 +103,5 @@ coco list-layers --input <odb_path>
 
 | Symptom | Solution |
 |---------|----------|
-| command not found | Run `scripts/install.sh` |
+| command not found | Run install script or download manually (see Installation) |
 | step not found | Specify `--step <name>` option |
